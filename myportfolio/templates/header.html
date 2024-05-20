@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My-portfolio</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="stylesheet" href="/static/css/responsive.css">
+</head>
+
+<body>
+    <header class="header">
+        <a href="#home" class="logo">Kishan Rana
+            <span>Ghosh</span></a>
+        <i class='bx bx-menu-alt-right' id="menu-icon"></i>
+
+        <nav class="nav res-menu">
+            <a href="{% url "home" %}" class="{% if request.path == '/' %} active {% endif %}" >Home</a>
+            <a href="{% url "about" %}" class="{% if request.path == '/about/' %} active {% endif %}">About</a>
+            <a href="{% url "contact" %}" class="{% if request.path == '/contact/' %} active {% endif %}">Contact</a>
+        </nav>
+    </header>

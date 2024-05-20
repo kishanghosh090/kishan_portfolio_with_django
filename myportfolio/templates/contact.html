@@ -1,0 +1,22 @@
+{% extends "base.html" %} 
+{% block content %}
+<section class="contact" id="contact" style=" margin-top:"2rem"">
+    <h1>Contact <span>Me</span></h1>
+
+    <div class="mb-3">
+        <div for="exampleFormControlInput1" class="email">Email address</div>
+        <input type="email" class="form-control bg-color" id="exampleFormControlInput1"
+            placeholder="name@example.com">
+        <div for="exampleFormControlInput1" class="Phone">Phone Number</div>
+        <input type="number" class="form-control bg-color" id="exampleFormControlInput1" placeholder="1234567890">
+
+    </div>
+    <div class="description">
+        <div for="exampleFormControlTextarea1" class="form-control">Description</div>
+        <input class="text-area" id="exampleFormControlTextarea1" type="text">
+    </div>
+    <div>
+        <button class="btn" type="submit">Submit</button>
+    </div>
+</section>
+{% endblock content %}
